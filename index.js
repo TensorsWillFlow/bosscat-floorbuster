@@ -77,7 +77,7 @@ const printFloorbuster = () => {
   );
   console.log(`\n\n                                     BUST THAT FLOOR LET'S GOOOOOOOO`.red);
   console.log(`\n\n                                  FIRST WE TAKE OVER CNFT, THEN THE WORLD.`.red);
-  console.log(`\n\n                                             CITIZEN'S STRONK!`.magenta);
+  console.log(`\n\n                                             BOSSCATS STRONK!`.magenta);
   console.log(
     "\n========================================================================================================="
       .cyan
@@ -96,10 +96,7 @@ if (mode === "get-units") {
     console.log(`\nSuccessfully retreived ${rawAssets.length} BossCats from cnft...`.magenta);
     clearInterval(interval);
     jsonfile.writeFileSync(file, rawAssets);
-    console.log(
-      "Stored BossCats locally, so you can perform floorbuster mode or search for rare items!"
-        .magenta
-    );
+    console.log("Stored BossCats locally, so you can perform floorbuster mode.".magenta);
     console.log(
       "\n========================================================================================================="
         .cyan
