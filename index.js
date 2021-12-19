@@ -53,7 +53,7 @@ const printFloorbuster = () => {
 
   assets.forEach((item) => {
     const price = item.price / 1000000;
-    if (price <= floorprice) {
+    if (price < floorprice) {
       processedAssets.push(item);
     }
   });
